@@ -1,0 +1,21 @@
+public class OopsBannerUC4 {
+    public static void main(String[] args) {
+        displayBanner();
+    }
+
+    public static void displayBanner() {
+        // UC4 Requirement: Store lines in a String array for modularity
+        String[] bannerLines = {
+            String.join("  ", "OOOOO", "OOOOO", "PPPPP", " SSSSS"),
+            String.join("  ", "O   O", "O   O", "P   P", "S     "),
+            String.join("  ", "O   O", "O   O", "PPPPP", " SSSS "),
+            String.join("  ", "O   O", "O   O", "P    ", "     S"),
+            String.join("  ", "OOOOO", "OOOOO", "P    ", "SSSSS ")
+        };
+
+        // UC4 Requirement: Use a loop for cleaner output traversal
+        for (String line : bannerLines) {
+            System.out.println(line);
+        }
+    }
+}
